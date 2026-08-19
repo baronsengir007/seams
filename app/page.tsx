@@ -76,7 +76,7 @@ export default function Home() {
 
       <Section name="DESCRIPTION">
         <div className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-md border border-border bg-panel p-5">
+          <div className="panel-hover rounded-md border border-border bg-panel p-5">
             <h3 className="font-bold text-text">Three sources, one report</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               Environment variables, feature flags (LaunchDarkly, Unleash,
@@ -84,7 +84,7 @@ export default function Home() {
               a flag in staging and a var in prod still line up.
             </p>
           </div>
-          <div className="rounded-md border border-border bg-panel p-5">
+          <div className="panel-hover rounded-md border border-border bg-panel p-5">
             <h3 className="font-bold text-text">Expected is not noise</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               Some differences are the point: instance sizes, debug flags.
@@ -92,14 +92,14 @@ export default function Home() {
               and they stay visible but stop failing your pipeline.
             </p>
           </div>
-          <div className="rounded-md border border-border bg-panel p-5">
+          <div className="panel-hover rounded-md border border-border bg-panel p-5">
             <h3 className="font-bold text-text">Read-only by design</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               seams never mutates an environment and never phones home.
               Secrets are compared as digests; values stay on your machine.
             </p>
           </div>
-          <div className="rounded-md border border-border bg-panel p-5">
+          <div className="panel-hover rounded-md border border-border bg-panel p-5">
             <h3 className="font-bold text-text">Exit codes you can ship</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               0 clean, 1 unexpected seams, 2 source unreachable. Wire it

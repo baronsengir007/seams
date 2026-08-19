@@ -124,7 +124,7 @@ export default function Playground() {
         />
         <button
           type="submit"
-          className="rounded border border-border px-3 py-1 text-xs text-muted hover:border-amber hover:text-amber"
+          className="press rounded border border-border px-3 py-1 text-xs text-muted transition-colors hover:border-amber hover:text-amber"
         >
           run
         </button>

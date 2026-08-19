@@ -16,7 +16,7 @@ export default function CopyInstall() {
           setTimeout(() => setCopied(false), 2000);
         });
       }}
-      className="group flex w-full items-center justify-between gap-4 rounded-md border border-border bg-raised px-4 py-3 text-left text-sm transition-colors hover:border-amber/60"
+      className="press group flex w-full items-center justify-between gap-4 rounded-md border border-border bg-raised px-4 py-3 text-left text-sm transition-colors hover:border-amber/60"
       aria-label="Copy install command"
     >
       <span>
