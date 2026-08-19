@@ -1,4 +1,5 @@
 import Terminal from "./Terminal";
+import Playground from "./Playground";
 import CopyInstall from "./CopyInstall";
 
 function Section({
@@ -52,7 +53,7 @@ export default function Home() {
       {/* NAME + hero */}
       <Section name="NAME">
         <h1 className="text-2xl font-bold text-text sm:text-3xl">
-          seams — find where your environments disagree
+          seams: find where your environments disagree
         </h1>
         <p className="mt-4 max-w-2xl leading-relaxed text-muted">
           Production and staging were identical once. Since then: 214
@@ -134,6 +135,10 @@ export default function Home() {
         </div>
       </Section>
 
+      <Section name="TRY IT">
+        <Playground />
+      </Section>
+
       <Section name="INSTALL">
         <div className="space-y-3">
           <CopyInstall />
@@ -147,8 +152,7 @@ export default function Home() {
       <Section name="COLOPHON">
         <p className="max-w-2xl text-sm leading-relaxed text-muted">
           <span className="font-bold text-text">seams</span> is a fictional
-          tool. This page is a portfolio demonstration built by Rienk
-          Rienks —{" "}
+          tool. A portfolio project by Rienk Rienks -{" "}
           <a
             href="https://github.com/baronsengir007/seams"
             className="text-amber underline underline-offset-4"
