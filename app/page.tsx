@@ -42,7 +42,7 @@ const EXAMPLES = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-6xl px-6 pb-20">
+    <main className="mx-auto max-w-4xl px-6 pb-20">
       {/* Man-page header */}
       <header className="flex items-baseline justify-between border-b border-border py-4 text-xs text-muted">
         <span>SEAMS(1)</span>
