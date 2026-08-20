@@ -69,6 +69,13 @@ pointer query, reduced motion respected).
 
 Behaviour outranks aesthetics at every conflict. That is why this page
 is the quietest of the three demos: for a developer tool the field
-guide's motion budget is near zero, so the only animation here is the
-hero terminal typing once and settling. Restraint was the derived
-answer, not a shortcut.
+guide's motion budget is near zero. The hero terminal types once and
+settles, and man-page sections rise 6px as you scroll past them, half
+the distance used on the other two demos. Restraint here was the
+derived answer, not a shortcut.
+
+The reveals are CSS scroll-driven animations (`animation-timeline:
+view()`) inside `@supports` and `prefers-reduced-motion:
+no-preference`, so the `opacity: 0` starting state never applies where
+it is unsupported or unwanted: motion can never be the reason a section
+is missing.

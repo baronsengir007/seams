@@ -10,7 +10,7 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section className="mt-12">
+    <section data-reveal className="mt-12">
       <h2 className="man-h text-sm">{name}</h2>
       <div className="mt-3 pl-0 sm:pl-6">{children}</div>
     </section>

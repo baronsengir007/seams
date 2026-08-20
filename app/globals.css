@@ -52,8 +52,32 @@ body {
 }
 
 
-/* Subtle interaction polish; deliberately no scroll reveals: the
-   behaviour doc keeps motion low for developer tools. */
+/* Section reveals, tied to scroll position rather than a JS observer, so
+   content can never be stuck invisible. Deliberately smaller than on the
+   other demos (6px, not 14px): a developer tool earns trust by being
+   quiet, and man-page sections should settle rather than perform. */
+@keyframes reveal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-reveal] {
+      animation: reveal-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 60%;
+    }
+  }
+}
+
+/* Subtle interaction polish. */
 .press {
   transition: transform 140ms cubic-bezier(0.23, 1, 0.32, 1);
 }
